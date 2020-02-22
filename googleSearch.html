@@ -1,5 +1,7 @@
 <html>
 
+    <title> Google </title>
+
     <style>
             *{
                 box-sizing:border-box;
@@ -13,15 +15,16 @@
                 text-decoration: none;
             }
 
-            .buttons{
+            #buttons{
+                color: rgb(48, 48, 230);
                 margin-bottom:60px;
             }
 
-            button{
-                background: #f2f2f2;
+            #button{
+                background: whitesmoke;
                 border:none;
                 border-radius: 2px;
-                color:#757575;
+                color:blue;
                 font-size: 10pt;
                 font-family: arial;
                 font-weight:bold;
@@ -79,13 +82,7 @@
                 width: 100%;
             }
 
-            .footer:after{
-                clear:both;
-                content:"";
-                display:block;
-                height:0;
-                overflow:hidden;
-            }
+
 
             .footer-left{
                 float: left;
@@ -95,18 +92,32 @@
                 float:right;
             }
 
+            .footer-top{
+                top: 0;
+                font: #757575;
+                font-family: arial;
+                left: -5px;
+                padding: 5px;
+                position: fixed;
+                width: 100%;
+            }
 
-            /* .searchform{
-                border: 1px;
-                display: flex;
-                float: center;
-                font-size: 13px;
-                padding: 300px 100px 100px 400px;
-                position: abolute;
-                text-align: center;
+            .footer-top a{
 
+                color: #757575;
+                font-size: 10px;
+                padding: 5px;
                 
-            } */
+            }
+
+            .footer-left-top{
+                float: left;
+            }
+
+            .footer-right-top{
+                float: right;
+            }
+
 
     </style>
 
@@ -131,7 +142,7 @@
 
             </div>
 
-            <div class = "buttons">
+            <div class = "buttons" id = "buttons">
                 <button> Google Search</button>
                 <button> I'm Feeling Lucky </button>
             </div>
@@ -159,6 +170,23 @@
 
                 </span>
 
+            </div>
+
+            <div class = footer-top>
+
+                    <span class = "footer-left-top">
+
+                            <a href="#">About</a>
+                            <a href="#">Store</a>
+        
+                    </span>
+
+                    <span class = "footer-right-top">
+
+                            <a href = "#">Gmail</a>
+                            <a href = "#">Images</a>
+                            <button class = "signInButton"> Sign In</button>
+                    </span>
             </div>
 
         </div>
